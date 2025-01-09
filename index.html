@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center">SETS</h1>
+        <p class="text-center">Click on each topic to learn more.</p>
+        <div class="row">
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#setModal">
+                    Sets
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#creatingSetModal">
+                    Creating a Set
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#convertingListToSetModal">
+                    Converting a List into a Set using set()
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#accessingElementsInSetModal">
+                    Accessing Elements in a Set
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#addingElementsToSetModal">
+                    Adding Elements to a Set
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#removingElementsFromSetModal">
+                    Removing Elements from a Set
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#setOperationsModal">
+                    Set Operations
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#setComparisonModal">
+                    Set Comparison
+                </button>
+            </div>
+            
+        </div>
+        <div class="container" style="margin-top: 10%;">
+            <img style="margin-left: 12%;" src="./images/1.png" alt="" width="80%">
+        </div>
+        
+
+</div>
+
+
+
+        <!-- Modals -->
+        <div class="modal fade" id="setModal" tabindex="-1" aria-labelledby="setLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="setLabel">Sets in Python</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    In Python, a <b>set</b> is an <b>unordered</b> collection of <b>unique</b> elements.
+                                    <br><br>
+                                    <b>Characteristics of a set:</b>
+                                    <ul style="font-size: 1.5rem; list-style-type: none;">
+                                        <li>🧩 <b>Unique Elements:</b> A set does not allow duplicate elements.</li>
+                                        <li>🔀 <b>Unordered:</b> Sets do not maintain any order of elements.</li>
+                                        <li>🔧 <b>Mutable:</b> You can add or remove elements from a set, but elements themselves must be immutable.</li>
+                                    </ul>
+                                    <br>
+                                    We often encounter sets in our daily lives.
+                                    <br>
+                                    <br>
+                                    For example:
+                                    <ul style="font-size: 1.5rem; list-style-type: none;">
+                                        <li>🌍 Set of planets in the solar system</li>
+                                        <li>🔤 Set of alphabets in English</li>
+                                    </ul>
+                                    <br>
+                                    📚 There are already so many data types in Python, so why do we need sets?
+                                    <br>
+                                    <ul>
+                                        <li>Sets help us to store unique elements.</li>
+                                        <li>Sets are used when you want to perform mathematical set operations like union and intersection.</li>
+                                        <li>Sets can also help you to store elements with the same or different data types.</li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="modal fade" id="creatingSetModal" tabindex="-1" aria-labelledby="creatingSetLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="creatingSetLabel">Creating a Set in Python</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    🚀 To create a set in Python, you can simply place the elements inside curly brackets `{}` separated by commas. 
+                                    <br>
+                                    Let’s create a set of superhumans.
+                                    <br>
+                                 <img src="./images/image16.png" alt="">
+                                    <br>
+                                    <br>
+                                    If you wish to create an empty set you can do that using <b>set()</b> method.<br>
+
+                                    <img src="./images/image1.png" alt="">
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="convertingListToSetModal" tabindex="-1" aria-labelledby="convertingListToSetLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="convertingListToSetLabel">Converting a List into a Set using <code>set()</code></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    🌟<b>set()</b> is also used to convert another datatype, like a list or tuple, to a set. <br><br>
+                                    You can see here how the list had some names twice but the set removes the duplicates.
+                                    <br><img src="./images/image22.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="accessingElementsInSetModal" tabindex="-1" aria-labelledby="accessingElementsInSetLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="accessingElementsInSetLabel">Accessing Elements in a Set</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    🚫 You cannot access items in a set using an index or a key, because sets are unordered collections in Python. 
+                                    <br><br>
+                                    🔄 <b>How to access elements in a set?</b>
+                                    <br>
+                                    You can loop through a set like so:<br><br>
+                                    <img src="./images/image25.png" alt="">
+                                    <BR><BR>
+                                        Here, the item is a temporary variable that holds the current value in the set as the loop iterates.
+                                        <BR><BR>
+                                        For every iteration of loop, one element from superhumans set is assigned to the variable item.
+                                        <BR><BR>
+                                        The loop repeats as many times as there are elements in the superhumans set.
+                                           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="addingElementsToSetModal" tabindex="-1" aria-labelledby="addingElementsToSetLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addingElementsToSetLabel">Adding Elements to a Set</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    📌 <b>Using <code>add()</code>:</b>
+                                    This method adds a single element to the set.<br>
+                                    <img src="./images/image24.png" alt="">
+                                    <br><br>
+                                    📌 <b>Using <code>update()</code>:</b>
+                                    This method adds multiple elements to the set. <br> The elements can be any iterable, like a list, tuple, another set, or even a string.
+                                    <br> 
+                                    <img src="./images/5.png" alt="">
+                                    <br><br>
+                                    <b>Adding a list</b><br>
+                                    <img src="./images/2.png" alt="">
+                                    <br><br>
+                                    <b>Adding a tuple</b><br>
+                                    <img src="./images/6.png" alt="" width="25%"><br>
+                                    <img src="./images/3.png" alt="">
+                                    <br><br>
+                                    <b>Adding a string</b><br>
+                                    When you use string, it splits the string into individual characters and adds them to the set as separate elements.<br>
+                                    <img src="./images/7.png" alt="" width="30%"><br>
+                                    <img src="./images/4.png" alt="">
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="removingElementsFromSetModal" tabindex="-1" aria-labelledby="removingElementsFromSetLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="removingElementsFromSetLabel">Removing Elements from a Set</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    🛑 You can remove elements from a set in Python using two methods: <code>remove()</code> and <code>discard()</code>.
+                                    <br><br>
+                                    📌 <b>Using <code>remove()</code>:</b>
+                                    <br>
+                                    Removes the element and raises an error if not present.
+                                    <br>
+                                  Example: <br>
+                                  <img src="./images/image23.png" alt="" width="60%">
+                                    <br><br>
+                                    📌 <b>Using <code>discard()</code>:</b>
+                                    <br>
+                                    Removes the element and <b>does not</b> raise an error if it is absent.
+                                    <br>
+                                    Example: <br>
+                                    <img src="./images/image27.png" alt=""  width="60%">
+                                    <br><br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="membershipOperatorModal" tabindex="-1" aria-labelledby="membershipOperatorLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="membershipOperatorLabel">Membership Operator with Sets</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                    🔍 The <b>membership operator</b> in Python helps us check if a specific value is present in a set (or other collections like lists or dictionaries).
+                                    <br><br>
+                                    📌 <b>Do you remember the membership operator?</b>
+                                    <br>
+                                    The membership operator is represented by the keyword <code>in</code>, and we use it to test if a value exists in a set.
+                                    <br><br>
+                                    📊 <b>Example with sets:</b>
+                                    <pre style=" background-color: #f8f9fa; padding: 10px;">
+        superhumans_set = {'Iron Man', 'Spider-Man', 'Hulk', 'Thor'}
+        print('Iron Man' in superhumans_set)  # Output: True
+        print('Captain America' in superhumans_set)  # Output: False
+                                    </pre>
+                                    In this example:
+                                    - `'Iron Man' in superhumans_set` returns `True` because "Iron Man" is present in the set.
+                                    - `'Captain America' in superhumans_set` returns `False` because "Captain America" is not in the set.
+                                    <br><br>
+                                    📌 <b>Key Takeaways:</b>
+                                    <ul style=" list-style-type: none;">
+                                        <li>🔎 Use the <code>in</code> operator to check if a value exists in a set.</li>
+                                        <li>❌ If the value is not present, it will return <code>False</code>.</li>
+                                        <li>✔️ If the value is found, it returns <code>True</code>.</li>
+                                    </ul>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="setOperationsModal" tabindex="-1" aria-labelledby="setOperationsLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="setOperationsLabel">Set Operations</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+                                   
+                                    In Python, you can perform various operations on sets using operators like <code>&</code>, <code>|</code>, <code>-</code>, <code>&lt;=</code>, <code>&gt;=</code>, and <code>^</code>.
+                                    <br><br>
+        
+                                    📌 <b>Union (|)</b>
+                                    <br>
+                                    <!-- Let’s say you and your friend are planning a party and you both prepare a list of all items you would need. <br> You can combine both lists using the <code>|</code> (union) operator: -->
+                                  <br> <img src="./images/image26.png" alt=""> <br>
+                                    <br>
+                                    This operator combines multiple sets. You can have more than 2 sets too!
+        
+                                    <br><hr><br>
+                                    📌 <b>Intersection (&)</b><br>
+                                    <img src="./images/image40.png" alt="">
+                
+                                    <!-- If you want to find the common items in both sets, you can use the <code>&</code> (intersection) operator: -->
+                                    <br> <img src="./images/image28.png" alt=""> <br>
+                                    <br>
+                                    This operator gives a new set with elements common to all sets.
+        
+                                    <br><hr><br>
+                                    📌 <b>Difference (-)</b>
+                                    <br>
+                                    The difference operator returns a set of elements present in one set but not in the other. <br>
+                                    ● <code>list1 - list2</code> gives elements in <b>list1</b> but not in <b>list2</b>. <br>
+                                    ● <code>list2 - list1</code> gives elements in <b>list2</b> but not in <b>list1</b>.
+                                    <br>
+                                    <img src="./images/image40.png" alt="">
+                                    <br> <img src="./images/image29.png" alt=""> <br>
+                                    
+                                    <br><br>
+                                    <br><img src="./images/image40.png" alt="">
+                                    <br> <img src="./images/image30.png" alt=""> <br>
+                                    <br>
+                                    
+        
+                                    <br><hr><br>
+                                    📌 <b>Symmetric Difference (^)</b>
+                                   
+                                    <br> <img src="./images/image31.png" alt=""> <br>
+                                    <br>
+                                    This operator gives a set of elements that are in either of the sets but not in both.
+        
+                                    <br><hr><br>
+                                    📌 <b>Key Takeaways:</b>
+                                    <ul style=" list-style-type: none;">
+                                        <li>🔗 <b>Union</b> (<code>|</code>) combines multiple sets into one.</li>
+                                        <li>🔄 <b>Intersection</b> (<code>&</code>) finds common elements in sets.</li>
+                                        <li>➖ <b>Difference</b> (<code>-</code>) shows items present in one set but not another.</li>
+                                        <li>🔀 <b>Symmetric Difference</b> (<code>^</code>) shows items that are unique to each set.</li>
+                                    </ul>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="setComparisonModal" tabindex="-1" aria-labelledby="setComparisonLabel" aria-hidden="true">
+            <div class="modal-dialog custom-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="setComparisonLabel">Set Comparison</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-container">
+                            <div class="text-content">
+                                <div style="font-size: 1.5rem; line-height: 1.6;">
+        
+                                    📌 <b>Subset (&lt;=)</b>
+                                    <br>
+                                    A set is called a subset of another set if all elements of that set exist in another set. 
+                                    
+
+                                    <br><img src="./images/image32.png" alt="Subset Comparison"> 
+                                    <br>
+                                   <br>
+                                    <img src="./images/image33.png" alt=""> <br>
+                                    <br><br>It checks if all the elements of one set are present in another. Gives True if they are present else False. list2 is a subset of list1 since all elements of list2 are in list1.
+                                    <br><hr><br>
+        
+                                    📌 <b>Superset (&gt;=)</b>
+                                    <br>
+                                    A superset refers to a set that contains all elements of another set. 
+                                    
+                                   <br> <br><img src="./images/image34.png" alt="Superset Comparison"> 
+                                    <br>
+                                    <br>
+                                    This operator checks if a set contains all elements of another set.
+                                    <br>
+                                    <br><hr><br>
+        
+                                    📌 <b>Key Takeaways:</b>
+                                    <ul style="list-style-type: none;">
+                                        <li>🔗 <b>Subset</b> (<code>&lt;=</code>) checks if all elements of one set are in another set.</li>
+                                        <li>🔄 <b>Superset</b> (<code>&gt;=</code>) checks if one set contains all elements of another set.</li>
+                                    </ul>
+                                    <br>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
